@@ -1,0 +1,20 @@
+{
+    "name": "your-name/activity-ip-hider",
+    "description": "Hides activity IPs and stores them in database",
+    "type": "pterodactyl-addon",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ActivityIpHider\\": "src/"
+        }
+    },
+    "extra": {
+        "pterodactyl": {
+            "providers": [
+                "ActivityIpHider\\ServiceProvider"
+            ]
+        }
+    }
+}
